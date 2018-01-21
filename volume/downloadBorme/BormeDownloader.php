@@ -1,8 +1,6 @@
 <?php
 namespace BormeDownloader;
 
-use PHPUnit\Runner\Exception;
-
 class BormeDownloader
 {
 	public function downloadBorme ($url)
@@ -51,7 +49,7 @@ class BormeDownloader
 		if(copy($url,$dest)){
 			return $dest;
 		}else{
-			throw new \Exception( 'No se ha podido descargar : ' . $url );
+			throw new Exception( 'No se ha podido descargar : ' . $url );
 		}
 	}
 
