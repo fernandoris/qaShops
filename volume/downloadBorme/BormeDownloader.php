@@ -26,11 +26,13 @@ class BormeDownloader
 		}
 	}
 
-	private function urlIsPdf($url)
+	public function urlIsPdf($url)
 	{
 		if (!in_array("Content-Type: application/pdf", get_headers($url)))
 		{
 			throw new \DomainException('La url no es un pdf : '.$url);
+		}else{
+			return true;
 		}
 	}
 
