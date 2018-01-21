@@ -1,0 +1,6 @@
+{
+  "require": {
+    "smalot/pdfparser"  : "*",
+    "phpunit/phpunit"   : "^6.5"
+  }
+}

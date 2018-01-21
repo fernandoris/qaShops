@@ -1,0 +1,25 @@
+version: '2'
+
+services:
+###########################
+# Configuración del contenedor Nginx
+###########################
+    qashops_public:
+        build:
+            context: ./
+            dockerfile: /docker/nginx/Dockerfile
+        ports:
+            - 9000:80
+        volumes_from:
+            - qashops_app
+###########################
+# Configuración del contenedor PHP
+###########################
+    qashops_app:
+        build:
+            context: ./
+            dockerfile: /docker/php/Dockerfile
+        expose:
+            - 9000
+        volumes:
+            - ./volume:/var/www/html
