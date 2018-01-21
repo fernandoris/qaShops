@@ -17,7 +17,14 @@ Se puede consultar el estado de la instalacion con
 ```
 docker-compose logs -f qashops_app
 ```
+Se puede ejecutar el volume/downloadBorme/index.php accediendo a:
 
+[http://localhost:9000/downloadBorme](http://localhost:9000/downloadBorme)
+
+Tras ello debemos obtener en la carpeta volume/downloadBorme/txt el archivo 
+```
+volume/downloadBorme/txt/BORME-A-2017-6-41.txt
+```
 ### Prerequisites
 
 * [Docker](https://docs.docker.com/engine/installation/)
