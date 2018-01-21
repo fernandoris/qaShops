@@ -17,9 +17,9 @@ Se puede consultar el estado de la instalacion con
 ```
 docker-compose logs -f qashops_app
 ```
-Se puede ejecutar el volume/downloadBorme/index.php accediendo a:
+Se puede ejecutar el volume/downloadBorme/index.php accediendo a poner atención al puerto 9000:
 
-[http://0.0.0.0:9000/downloadBorme](http://0.0.0.0:9000/downloadBorme)
+[http://localhost:9000/downloadBorme](http://localhost:9000/downloadBorme)
 
 Tras ello debemos obtener en la carpeta volume/downloadBorme/txt el archivo 
 ```
