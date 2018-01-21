@@ -19,7 +19,7 @@ docker-compose logs -f qashops_app
 ```
 Se puede ejecutar el volume/downloadBorme/index.php accediendo a:
 
-[http://localhost:9000/downloadBorme](http://localhost:9000/downloadBorme)
+[http://0.0.0.0:9000/downloadBorme](http://0.0.0.0:9000/downloadBorme)
 
 Tras ello debemos obtener en la carpeta volume/downloadBorme/txt el archivo 
 ```
