@@ -1,4 +1,5 @@
 <?php
+namespace qashops\refactor;
 
 Class OrderLineCommonQuerys extends OrderLine
 {
