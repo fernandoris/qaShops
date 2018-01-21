@@ -4,10 +4,11 @@ namespace qashops\refactor;
 Class BlockedStockCommonQuerys extends BlockedStock
 {
 	/**
+	 * Devuelve el stock bloqueado de un productId
 	 * @param $productId
-	 * @param bool $to_date
+	 * @param bool $to_date Si está a true se consulta el campo blocked_stock_date si no blocked_stock_to_date
 	 *
-	 * @return mixed
+	 * @return int
 	 */
 	public static function getBlockedStock($productId, $to_date = false)
 	{

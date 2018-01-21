@@ -3,6 +3,12 @@ namespace qashops\refactor;
 
 Class OrderLineCommonQuerys extends OrderLine
 {
+	/**
+	 * Devuelve los pedidos bloqueados de un productId
+	 * @param $productId
+	 *
+	 * @return int
+	 */
 	public static function getBlockedOrders($productId)
 	{
 		return find()
