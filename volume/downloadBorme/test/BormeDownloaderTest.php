@@ -1,7 +1,6 @@
 <?php
 require_once __DIR__."/../vendor/autoload.php";
 use BormeDownloader\BormeDownloader;
-use PHPUnit;
 
 class BormeDownloaderTest extends PHPUnit\Framework\TestCase
 {
